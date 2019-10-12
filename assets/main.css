@@ -7,16 +7,20 @@
   transition-delay: 300ms;
 }
 
-.page-enter img {
+.page-enter {
   transform: translateY(100px);
 }
 
-.page-enter {
+.page-enter img {
   transform: translateY(100px);
 }
 
 .page-leave-to {
   transform: translateY(-100px);
+}
+
+.page-leave-to img {
+  transform: translateY(-50px);
 }
 
 .page-enter,
@@ -53,6 +57,10 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 10px;
+}
+
+.nuxt-link-exact-active {
+  border-bottom: 1px solid #fff;
 }
 
 h1 {
