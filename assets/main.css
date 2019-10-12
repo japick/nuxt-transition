@@ -1,38 +1,42 @@
 .page-enter-active,
 .page-leave-active {
-  transition: transform 1s ease, opacity .6s ease;
+  transition: transform 1s ease;
 }
 
 .page-enter-active {
-  transition-delay: .5s;
+  transition-delay: 300ms;
+}
+
+.page-enter img {
+  transform: translateY(100px);
 }
 
 .page-enter {
-  transform: translateY(50px);
+  transform: translateY(100px);
 }
 
 .page-leave-to {
-  transform: translateY(-50px);
+  transform: translateY(-100px);
 }
 
 .page-enter,
 .page-leave-to {
-  opacity: 0;
   transition-delay: none;
 }
 
-/* .page-enter-active {
-  transition: opacity 0.25s ease-out;
+@font-face {
+	font-family: "GilliardPro";
+	src:url("fonts/0faa304.woff2") format("woff2"),url("fonts/1f8ff9c.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 
-.page-leave-active {
-  transition: opacity 0.25s ease-in;
+body {
+  background-color: #9f8155;
+  color: #fff;
+  font-family: "GilliardPro", serif;
+  overflow: hidden;
 }
-
-.page-enter,
-.page-leave-active {
-  opacity: 0;
-} */
 
 .nav {
   position: absolute;
@@ -47,12 +51,22 @@
 
 .nav li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 10px;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 30vmax;
+  position: absolute;
+  bottom: -15vmax;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 50vh;
+  transition: all 1s ease;
+  position: absolute;
+  z-index: -1;
 }
 
 .PageTransition {
@@ -102,6 +116,11 @@ h1 {
   color: white;
   font-size: 10vw;
   opacity: 0;
+}
+
+.PageTransition__logo svg {
+  width: 200px;
+  display: block;
 }
 
 @keyframes heightUp {

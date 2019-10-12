@@ -1,9 +1,8 @@
 <template>
   <section class="container">
     <Nav />
-    <div>
-      <h1>About</h1>
-    </div>
+    <h1 class="heading">About</h1>
+    <img src="~/assets/img/michael_elliott_thumbnail_01-871x570.jpg" alt="#">
   </section>
 </template>
 

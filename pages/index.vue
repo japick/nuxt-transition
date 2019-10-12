@@ -1,9 +1,8 @@
 <template>
   <section class="container">
     <Nav />
-    <div>
-      <h1>Home</h1>
-    </div>
+    <h1 class="heading">Home</h1>
+    <img src="~/assets/img/essence_home2-872x570.jpg" alt="#">
   </section>
 </template>
 
@@ -21,7 +20,8 @@ export default {
 <style>
 
 .container {
-  height: calc(100vh - 50px); /* hack */
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
